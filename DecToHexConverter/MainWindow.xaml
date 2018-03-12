@@ -1,0 +1,21 @@
+﻿<Window x:Class="DecToHexConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DecToHexConverter"
+        mc:Ignorable="d"
+        Title="DecToHex" Height="231" Width="270">
+    <Grid Margin="0,0,2,0" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Result is automatically copied to clipboard" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="248"/>
+        <TextBox x:Name="DecimalInput" HorizontalAlignment="Left" Height="23" Margin="70,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="HexadecimalOutput" HorizontalAlignment="Left" Height="23" Margin="70,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <Button x:Name="Button1" Content="Go!" HorizontalAlignment="Left" Margin="70,102,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click" Height="20"/>
+
+    </Grid>
+</Window>
